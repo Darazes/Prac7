@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+        <ul class="topmenu">
+            <li>
+
+                <a href="#" class="down">Регистрация</a>
+                <ul class="submenu">
+                    <form>
+                        <li>
+                            <p>Имя</p>
+                            <input type="text" pattern="[А-ЯЁа-яё1-9]{2,10}" />
+                        </li>
+                        <li>
+                            <p>Фамилия</p>
+                            <input type="text" pattern="[А-Яа-яЁё]{2,14}" />
+                        </li>
+                        <li>
+                            <p>Отчество</p>
+                            <input type="text" pattern="[А-Яа-яЁё]{2,15}" />
+                        </li>
+                        <li>
+                            <p>Дата рождения</p>
+                            <input type="date" pattern="{1,31}.{1,12}.{1900,2009}" />
+                        </li>
+                        <li>
+                            <p>Логин</p>
+                            <input type="text" pattern="[A-Za-zА-Яа-яЁё]{4,}" />
+                        </li>
+                        <li>
+                            <p>Пароль</p>
+                            <input type="password" pattern="[a-zA-Z]{5-10}" autocomplete="off" />
+                        </li>
+                        <li>
+                            <p>e-mail</p>
+                            <input type="email" />
+                        </li>
+                        <li>
+                            <p>Сообщение о регистрации</p>
+                            <input type="text" pattern="[A-Za-zА-Яа-яЁё]{10-100}" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Зарегистрироваться" class="submit" />
+                        </li>
+                        </form>
+                </ul>
+
+            </li>
+            <li>
+                <a href="#" class="down">Вход</a>
+                <ul class="submenu">
+                    <form>
+                        <li>
+                            <p>Логин</p>
+                            <input type="text" pattern="[A-Za-zА-Яа-яЁё1-9]{4,}" />
+                        </li>
+                        <li>
+                            <p>Пароль</p>
+                            <input type="password" pattern="[a-zA-Z]{5-10}" autocomplete="off" />
+                        </li>
+                        <li>
+                            <input type="submit" value="Войти" class="submit" />
+                        </li>
+                    </form>
+                </ul>
+            </li>
+        </ul>
+
+</body>
+</html>
